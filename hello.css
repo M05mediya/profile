@@ -1,0 +1,226 @@
+:root {
+   --background: #d8e3fa;
+   --gray: #eaeaec;
+   --primary: #29283f;
+   --primary-violet:#7370f4;
+}
+
+body{
+    background-image: linear-gradient(to bottom right ,red , black);
+    display: grid;
+    place-items: center;
+    height: 140vh;
+    padding: 24px;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card {
+    display:flex;
+    flex-wrap: wrap;
+    border-radius: 24px;
+    background-color: rgb(196, 192, 192, 0.7) ;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: clamp(320px, 70vw, 740px);
+    min-width: 320px;
+    min-height: 280px;
+    box-shadow: 1px 1px  black;
+    transition: 0.7s;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0, 35)
+    0px 5px 15px;  box-shadow: 0px 1px 30px  4px black;
+  
+}
+
+.background {
+    flex: 1 1 305px;
+}
+
+.background img {
+    width: 100%;
+    height:100%;
+    object-fit: fill;
+}
+
+.content {
+    flex: 3 1 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 16px;
+}
+
+.content > h2{
+    font-size: clamp(
+        1.3rem, 2.5vw,
+        1.8rem);
+        font-weight: 700;
+        margin-bottom: clamp(
+            0.35rem, 2vw,
+            0.55rem
+        );
+}
+
+.content > p {
+    font-size: clamp(1rem,
+        1.7vw, 1.1rem);
+    font-weight: 400;
+    margin: 6px 0;
+}
+
+.content a {
+    color: var(--primary-violet);
+}
+
+.chips {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 12px 0px 16px 0px;
+}
+
+.chip {
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 15px;
+    background-color: var(--gray);
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.chip:hover{
+    /* background-color: var(
+        --primary-violet);
+        color: var(--gray); */
+
+        background-color: rgb(194, 74, 0);
+        color: rgba(244, 241, 228, 0.925);
+        transform: scale(1.11);
+}
+
+
+/*sochyal --------------mediya*/
+
+.soc{
+    border-top: 1px solid var(
+        --gray);
+    padding-top: 16px;
+    gap: 12px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: auto;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 10px;
+    transition: 0.7s;
+    padding-top: 8px;
+}
+
+
+
+.soc .insta{
+  width: 86.5px;
+  height: 86.5px;
+  background-image: url(./icone/instagram\(1\).png);
+  background-size: 86.5px;
+  box-shadow: 0 0 3px 0.1px black; 
+  transition: 0.35s;
+  border-radius:30px;
+}
+
+.soc .insta:hover{
+    box-shadow: 0 0 10px 0.5px black;
+    transform: scale(1.08);
+    border-radius: 23px;
+}
+
+
+.soc .face{
+    width: 86.5px;
+    height: 86.5px;
+    background-image: url(./icone/facebook\ \(1\).png);
+    background-size: 86.5px;
+    box-shadow: 0 0 3px 0.1px black;
+    border-radius: 30px;
+    transition: 0.35s;
+  }
+  .soc .face:hover{
+    box-shadow: 0 0 10px 0.5px black;
+    transform: scale(1.08);
+    border-radius: 23px;
+  }
+  
+
+.soc .tel{
+    width: 86.5px;
+    height: 86.5px;
+    background-image: url(./icone/telegram\(1\).png);
+    background-size: 86.5px;
+    box-shadow: 0 0 3px 0.1px black;
+    border-radius: 30px;
+    transition: 0.35s;
+}
+.soc .tel:hover{
+    box-shadow: 0 0 10px 0.5px black;
+    transform: scale(1.08);
+    border-radius: 23px;
+}
+
+
+
+/*sochyal --------------mediya*/
+
+
+
+
+
+.action-buttons {
+    border-top: 1px solid var(
+        --gray);
+        padding-top: 16px;
+        gap: 2px;
+        display: flex;
+        margin-top: auto;
+        flex-wrap: wrap;
+}
+
+.action-buttons a {
+    background-color: var(
+        --primary);
+        color: #a1a1a1;
+        padding: 12px;
+        text-decoration: none;
+        border-radius: 12px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: nowrap;
+        flex: 1 0 240px;
+        max-width: 100%;
+        margin: 12px;
+        transition: 0.4s;
+    }
+
+.action-buttons a:hover {
+    background-color: underline rgb(0, 0, 0) ;
+    transform: scale(1.05);
+}
+
+.action-buttons a.secondary {
+    background-color: inherit;
+    color: var(--primary);
+    border: 1px solid var(
+        --primary);
+    flex: 1 0 80px;
+}
+
